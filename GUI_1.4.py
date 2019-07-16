@@ -224,12 +224,18 @@ class App:
         
     def enable_2(self):
         self.enable(self.var2, self.label_2, self.btn_2)
+        self.root.config(cursor = 'arrow')
+        self.root.unbind('<Button-1>')
         
     def enable_3(self):
         self.enable(self.var3, self.label_3, self.btn_3)
+        self.root.config(cursor = 'arrow')
+        self.root.unbind('<Button-1>')
     
     def enable_4(self):
-        self.enable(self.var4, self.label_4, self.btn_4)    
+        self.enable(self.var4, self.label_4, self.btn_4)
+        self.root.config(cursor = 'arrow')
+        self.root.unbind('<Button-1>')
 
     # -------------------------------------------------------
 
@@ -300,5 +306,4 @@ class App:
         
 pba = App(tk.Tk(), "The Optical Tweezer Program")
 pba.root.mainloop()
-
 
