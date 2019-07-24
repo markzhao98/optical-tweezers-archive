@@ -18,7 +18,7 @@ mmc.initializeDevice(DEVICE[0])
 mmc.setCameraDevice(DEVICE[0])
 mmc.setProperty(DEVICE[0], 'PixelType', '16bit')
 
-mmc.setExposure(200)
+mmc.setExposure(2)
 
 mmc.startContinuousSequenceAcquisition(1)
 
